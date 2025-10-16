@@ -780,6 +780,139 @@ body {
     font-weight: 600;
 }
 
+/* Facebook Section */
+.facebook-section {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.facebook-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1877f2, #42a5f5, #1e88e5);
+}
+
+.facebook-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.facebook-container h2 {
+    font-size: 1.8em;
+    color: #004d40;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #1877f2;
+    position: relative;
+    display: inline-block;
+}
+
+.facebook-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #42a5f5;
+    animation: expandWidth 2s ease-out;
+}
+
+/* Facebook Post Styling */
+.fb-post {
+    display: inline-block;
+    width: 100% !important;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fb-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.2);
+}
+
+/* Facebook iframe responsive */
+.fb-post span,
+.fb-post iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Blockquote fallback styling */
+.fb-xfbml-parse-ignore {
+    background: #f8f9fa;
+    border-left: 4px solid #1877f2;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+    color: #666;
+    line-height: 1.6;
+}
+
+.fb-xfbml-parse-ignore a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fb-xfbml-parse-ignore a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for Facebook section */
+@media (max-width: 768px) {
+    .facebook-section {
+        padding: 30px 20px;
+        margin: 30px 0;
+    }
+    
+    .facebook-container h2 {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    
+    .fb-post {
+        max-width: 100%;
+    }
+    
+    .fb-xfbml-parse-ignore {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .facebook-section {
+        padding: 25px 15px;
+        margin: 25px 0;
+    }
+    
+    .facebook-container h2 {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+    
+    .fb-xfbml-parse-ignore {
+        padding: 12px;
+        font-size: 0.85em;
+    }
+}
+
 /* FOOTER */
 .main-footer {
     background: linear-gradient(135deg, #004d40, #00332c);
