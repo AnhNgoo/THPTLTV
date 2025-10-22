@@ -1241,3 +1241,22 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+/* Custom Scrollbar - Teal Theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #00897b, #004d40);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #004d40, #00695c);
+}
